@@ -14,6 +14,7 @@ export interface Project {
   research?: { title: string; desc: string }[];
   mainFeatures?: string[];
   userFlow?: string[];
+  userFlows?: { label: string; steps: string[] }[];
   wireframes?: string[];
   highFidelity?: { title: string; desc: string; image: string }[];
   designSystem?: {
