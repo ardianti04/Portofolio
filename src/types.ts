@@ -11,6 +11,7 @@ export interface Project {
   tools?: string[];
   problem?: string;
   goal?: string;
+  roleDetails?: string[];
   research?: { title: string; desc: string }[];
   mainFeatures?: string[];
   userFlow?: string[];

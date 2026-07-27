@@ -32,67 +32,185 @@ import {
 import { Project, Skill } from "./types";
 
 const projects: Project[] = [
-  {
-    id: "dua-empat-tujuh",
-    title: "Unified Dashboard & License Management System",
-    company: "PT Dua Empat Tujuh (Solusi247)",
-    role: "UI/UX Designer Intern",
-    period: "Agu 2025 - Des 2025",
-    description: "Merancang antarmuka pengguna untuk membantu tim bisnis dan operasional dalam memantau data klien, mengelola lisensi produk keamanan siber, serta mengakses informasi keamanan secara lebih efisien melalui pengalaman pengguna yang intuitif..",
+//   {
+//     id: "dua-empat-tujuh",
+//     title: "Unified Dashboard & License Management System",
+//     company: "PT Dua Empat Tujuh (Solusi247)",
+//     role: "UI/UX Designer Intern",
+//     period: "Agu 2025 - Des 2025",
+//     description: "Merancang antarmuka pengguna untuk membantu tim bisnis dan operasional dalam memantau data klien, mengelola lisensi produk keamanan siber, serta mengakses informasi keamanan secara lebih efisien melalui pengalaman pengguna yang intuitif..",
+//     impact: [
+//       "Menyederhanakan proses pengelolaan klien dan lisensi dalam satu platform terpusat.",
+// "Meningkatkan efisiensi pemantauan status lisensi, aktivitas pengguna, dan performa layanan melalui visualisasi data yang jelas.",
+// "Membantu tim operasional mengakses informasi keamanan siber secara cepat dan terstruktur.",
+// "Menghasilkan desain antarmuka yang konsisten, mudah digunakan, dan selaras dengan kebutuhan bisnis serta pengguna."
+//     ],
+//     tags: ["UI/UX Design","Product Design","Dashboard Design","User Research","Design System","Cyber Security","Data Visualization","Web Application"],
+//     platform: "Web Dashboard",
+//     tools: ["Figma"],
+//     problem: "Pengelolaan data klien, lisensi produk, dan informasi keamanan siber masih tersebar pada berbagai sistem sehingga menyulitkan proses monitoring, pelaporan, serta pengambilan keputusan secara cepat dan akurat.",
+//     goal: "Merancang dashboard terintegrasi yang mampu mengonsolidasikan data klien, lisensi, dan keamanan siber ke dalam satu platform yang mudah digunakan, sehingga meningkatkan efisiensi operasional dan pengalaman pengguna.",
+//     research: [
+//       { title: "Design Thinking", desc:"Berkolaborasi secara rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis, teknis, dan pengguna."},
+//       { title: "Stakeholder Discussion", desc: "Diskusi rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis." },
+//       { title: "Workflow Analysis", desc: "Menganalisis alur kerja pengelolaan klien, lisensi, dan informasi keamanan guna menemukan peluang peningkatan efisiensi dan usability." }
+//     ],
+//     mainFeatures: ["Unified Dashboard", "License Generator", "Threat Intelligence", "CVE Database", "Client Management", "Support Ticket System"],
+//     userFlow: ["Login","Dashboard Overview","Manage Client Data","Monitor Security Information","Generate & Manage License","Handle Support Tickets","View Reports & Analytics"],
+//     wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
+//     highFidelity: [
+//       { title: "SOC Unified Dashboard", desc: "Pusat pemantauan aktivitas keamanan siber real-time dengan visualisasi Alert Volume Trend, Severity Breakdown, dan Quick IP Scoring dalam tema gelap yang intuitif.", image: "/images/unified dashboard.png" },
+//       { title: "Threat Intelligence & CVE", desc: "Penyajian data indikator ancaman (IOCs) dan database kerentanan (CVE) yang terstruktur.", image: "/images/threadintel.png" },
+//       { title: "License Management", desc: "Sistem pengelolaan data klien dan status lisensi (Active, Expired, Trial) secara menyeluruh.", image: "/images/home user.png" },
+//       { title: "Support System", desc: "Manajemen tiket dukungan dan kategori untuk penanganan masalah yang sistematis.", image: "/images/support feature.png" }
+//     ],
+//     designSystem: {
+//       colors: [
+//         { name: "Accent (Red)", hex: "#ef4136" },
+//         { name: "Primary (Dark Navy)", hex: "#02353d" },
+//         { name: "Secondary (Dark Teal)", hex: "#0d6176" },
+//         { name: "Highlight (Light Blue)", hex: "#48acc5" },
+//         { name: "Dark (Black)", hex: "#231f20" },
+//         { name: "Light (Off-white)", hex: "#efefef" }
+//       ],
+//       typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
+//       components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
+//     }
+//   },
+       {
+    id: "jejak-patroli",
+    title: "JejakPatroli - Patrol Management & Monitoring System",
+    company: "Politeknik Negeri Jember",
+    role: "Frontend Developer & Quality Assurance",
+    period: "Agu 2024 - Des 2024",
+    description: "Aplikasi mobile dan web dashboard untuk membantu organisasi dalam mengelola aktivitas patroli keamanan, memantau kehadiran petugas secara real-time, serta mendigitalisasi proses pelaporan patroli yang sebelumnya dilakukan secara manual",
+    roleDetails: [
+      "Menyusun skenario pengujian.",
+      "Melakukan Black Box Testing.",
+      "Melakukan Functional Testing.",
+      "Menjalankan Automation Testing menggunakan Katalon Studio.",
+      "Memvalidasi hasil pengujian berdasarkan expected result.",
+      "Berkolaborasi dengan developer untuk memastikan kualitas aplikasi."
+
+    ],
+    tags: ["Quality Assurance","Manual Testing","Black Box Testing","Functional Testing","Automation Testing","Katalon Studio","Test Case",
+  "Test Scenario", "Web Testing","Mobile Testing"],
+    platform: "Mobile Application & Web Dashboard",
+    tools: ["Katalon Studio", "GitHub", "Chrome","Android Emulator"], 
+    problem: "Proses pencatatan kehadiran dan aktivitas patroli keamanan masih dilakukan secara manual sehingga rentan terhadap kesalahan pencatatan, keterlambatan laporan, serta sulitnya proses monitoring dan verifikasi aktivitas petugas di lapangan.",
+    goal: "Merancang sistem patroli keamanan berbasis mobile dan website yang mampu mempermudah presensi, monitoring aktivitas patroli secara real-time, serta pengelolaan laporan keamanan yang lebih akurat dan transparan",
     impact: [
-      "Menyederhanakan proses pengelolaan klien dan lisensi dalam satu platform terpusat.",
-"Meningkatkan efisiensi pemantauan status lisensi, aktivitas pengguna, dan performa layanan melalui visualisasi data yang jelas.",
-"Membantu tim operasional mengakses informasi keamanan siber secara cepat dan terstruktur.",
-"Menghasilkan desain antarmuka yang konsisten, mudah digunakan, dan selaras dengan kebutuhan bisnis serta pengguna."
+      "Memastikan lebih dari 10 modul aplikasi berfungsi sesuai kebutuhan sistem melalui Black Box Testing dan Functional Testing.",
+      "Membantu developer memvalidasi implementasi fitur sebelum aplikasi digunakan oleh pengguna.",
+      "Meningkatkan efisiensi proses pengujian dengan Automation Testing menggunakan Katalon Studio.",
+      "Mengurangi penggunaan laporan manual dengan sistem pelaporan digital yang terdokumentasi dan mudah diakses."
     ],
-    tags: ["UI/UX Design","Product Design","Dashboard Design","User Research","Design System","Cyber Security","Data Visualization","Web Application"],
-    platform: "Web Dashboard",
-    tools: ["Figma"],
-    problem: "Pengelolaan data klien, lisensi produk, dan informasi keamanan siber masih tersebar pada berbagai sistem sehingga menyulitkan proses monitoring, pelaporan, serta pengambilan keputusan secara cepat dan akurat.",
-    goal: "Merancang dashboard terintegrasi yang mampu mengonsolidasikan data klien, lisensi, dan keamanan siber ke dalam satu platform yang mudah digunakan, sehingga meningkatkan efisiensi operasional dan pengalaman pengguna.",
     research: [
-      { title: "Design Thinking", desc:"Berkolaborasi secara rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis, teknis, dan pengguna."},
-      { title: "Stakeholder Discussion", desc: "Diskusi rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis." },
-      { title: "Workflow Analysis", desc: "Menganalisis alur kerja pengelolaan klien, lisensi, dan informasi keamanan guna menemukan peluang peningkatan efisiensi dan usability." }
+      { title: "Menyusun skenario pengujian", desc:"Melakukan analisis kebutuhan petugas keamanan dan kepala keamanan untuk memahami tantangan dalam proses patroli dan pelaporan lapangan."},
+      { title: "Melakukan Black Box Testing", desc: "Menganalisis aplikasi patroli keamanan seperti QR-Patrol dan GuardPatrolling untuk mengidentifikasi peluang peningkatan pengalaman pengguna." },
+      { title: "Melakukan Functional Testing", desc: "Mempelajari alur kerja patroli konvensional untuk mengidentifikasi hambatan operasional dan peluang digitalisasi proses patroli" }
     ],
-    mainFeatures: ["Unified Dashboard", "License Generator", "Threat Intelligence", "CVE Database", "Client Management", "Support Ticket System"],
-    userFlow: ["Login","Dashboard Overview","Manage Client Data","Monitor Security Information","Generate & Manage License","Handle Support Tickets","View Reports & Analytics"],
+    mainFeatures: ["Login", "Dashboard", "Data Satpam", "Data Jadwal", "Tracking","Kehadiran","Laporan","History","Profil",],
+    userFlow: ["Login","Check Assigned Schedule","Verify Attendance","Conduct Patrol","Upload Report & Documentation","Admin Monitors Activity","View Patrol History"],
     wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
     highFidelity: [
-      { title: "SOC Unified Dashboard", desc: "Pusat pemantauan aktivitas keamanan siber real-time dengan visualisasi Alert Volume Trend, Severity Breakdown, dan Quick IP Scoring dalam tema gelap yang intuitif.", image: "/images/unified dashboard.png" },
-      { title: "Threat Intelligence & CVE", desc: "Penyajian data indikator ancaman (IOCs) dan database kerentanan (CVE) yang terstruktur.", image: "/images/threadintel.png" },
-      { title: "License Management", desc: "Sistem pengelolaan data klien dan status lisensi (Active, Expired, Trial) secara menyeluruh.", image: "/images/home user.png" },
-      { title: "Support System", desc: "Manajemen tiket dukungan dan kategori untuk penanganan masalah yang sistematis.", image: "/images/support feature.png" }
+      { title: "Presensi Petugas", desc: "Memungkinkan petugas melakukan presensi menggunakan validasi GPS dan dokumentasi foto untuk memastikan kehadiran tercatat secara akurat dan transparan", image: "/images/presensi patrol.png" },
+      { title: "Monitoring Real-Time", desc: "Menyediakan dashboard pemantauan yang memungkinkan admin melihat status patroli, lokasi petugas, dan aktivitas keamanan secara langsung", image: "/images/location patrol.png" },
+      { title: "Manajemen Jadwal", desc: "Membantu admin mengatur, memperbarui, dan mendistribusikan jadwal patroli kepada petugas secara terpusat dan terorganisir.", image: "/images/jadwal patrol.png" },
+      { title: "Laporan Patroli", desc: "Memungkinkan petugas mengirim laporan patroli lengkap dengan foto, video, dan informasi kondisi keamanan langsung dari aplikasi", image: "/images/laporan patrol.png" },
+      { title: "Riwayat Laporan", desc: "Menyimpan seluruh aktivitas dan laporan patroli dalam satu sistem sehingga mudah ditinjau kembali untuk kebutuhan monitoring dan evaluasi", image: "/images/riwayat patrol.png" }
     ],
-    designSystem: {
-      colors: [
-        { name: "Accent (Red)", hex: "#ef4136" },
-        { name: "Primary (Dark Navy)", hex: "#02353d" },
-        { name: "Secondary (Dark Teal)", hex: "#0d6176" },
-        { name: "Highlight (Light Blue)", hex: "#48acc5" },
-        { name: "Dark (Black)", hex: "#231f20" },
-        { name: "Light (Off-white)", hex: "#efefef" }
-      ],
-      typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
-      components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
-    }
+    // designSystem: {
+    //   colors: [
+    //     { name: "Accent (Red)", hex: "#ef4136" },
+    //     { name: "Primary (Dark Navy)", hex: "#02353d" },
+    //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
+    //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
+    //     { name: "Dark (Black)", hex: "#231f20" },
+    //     { name: "Light (Off-white)", hex: "#efefef" }
+    //   ],
+    //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
+    //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
+    // }
+  },
+     {
+    id: "assignme",
+    title: "AssignMe - Learning & Assignment Management Platform",
+    company: "Academic Project",
+    role: "Project Manager & Quality Assurance",
+    period: "Feb 2026 - Jun2026",
+    description: "AssignMe adalah platform manajemen pembelajaran berbasis web yang dirancang untuk menyederhanakan proses distribusi materi, pengelolaan kelas, dan pengumpulan tugas secara digital. Dengan pengalaman pengguna yang intuitif, AssignMe membantu pengajar dan siswa berkolaborasi lebih efektif dalam lingkungan pembelajaran yang terorganisir, fleksibel, dan mudah diakses kapan saja",
+     roleDetails: [
+      "Menyusun skenario pengujian berdasarkan kebutuhan sistem.",
+      "Melaksanakan Black Box Testing pada aplikasi website dan mobile.",
+      "Menguji lebih dari 10 fitur utama, termasuk Login, Register, Dashboard, Create Class, Assignment, Timeline, People, Materials, dan Logout.",
+      "Melakukan Usability Testing menggunakan Maze untuk mengevaluasi pengalaman pengguna.",
+      "Berpartisipasi dalam User Acceptance Testing (UAT) untuk memastikan aplikasi memenuhi kebutuhan pengguna sebelum implementasi.",
+      "Berkolaborasi dengan tim pengembang untuk memvalidasi hasil pengujian dan meningkatkan kualitas aplikasi.",
+
+    ],
+    impact: [
+    "Memvalidasi lebih dari 10 fitur utama melalui Black Box Testing sebelum implementasi aplikasi.",
+    "Membantu siswa mengakses materi pembelajaran dan mengumpulkan tugas secara lebih praktis tanpa batasan lokasi.",
+    "Mendukung proses validasi aplikasi melalui User Acceptance Testing (UAT) agar sesuai dengan kebutuhan pengguna.",
+    "Berkolaborasi dengan tim pengembang dalam memperbaiki temuan pengujian sehingga meningkatkan kualitas aplikasi sebelum dirilis."
+    ],
+    tags: [ "Software QA","Project Management","Black Box Testing","Usability Testing","Maze","User Acceptance Testing","Test Case Design","Web Testing","Mobile Testing","Agile Scrum"],
+    platform: "Web & Mobile",
+    tools: [ "Maze","GitHub","Chrome","Laravel"], 
+    problem: 'Proses distribusi materi dan pengumpulan tugas secara manual sering menyebabkan kesulitan dalam pengelolaan kelas, keterlambatan pengumpulan tugas, serta kurangnya transparansi antara pengajar dan siswa dalam memantau aktivitas pembelajaran.',
+    goal: "Merancang platform pembelajaran daring yang memudahkan pengajar dalam mengelola kelas dan tugas, serta memberikan pengalaman belajar yang lebih fleksibel, terorganisir, dan mudah diakses bagi siswa",
+    research: [
+      { title: "User Research", desc:"Menganalisis kebutuhan pengajar dan siswa untuk memahami kendala yang sering terjadi dalam proses pembelajaran dan pengumpulan tugas secara online."},
+      { title: "Workflow Analysis", desc: "Mempelajari alur pengelolaan kelas, distribusi materi, dan pengumpulan tugas untuk menciptakan proses yang lebih efisien." },
+      { title: "Information Architecture", desc: "Menyusun struktur navigasi dan alur pengguna agar pengajar maupun siswa dapat mengakses fitur dengan mudah" }
+    ],
+    mainFeatures: ["Class Management", "Assignment Management", "Online Assignment Submission", "Learning Materials","Assignment Timeline",],
+    userFlow: ["Register / Login","Join or Create Class","Access Learning Materials","View Assignments","Submit Assignment","Track Submission Status","People & Class Collaboration"],
+    wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
+    highFidelity: [
+      { title: "Class Management", desc: "Memungkinkan pengajar membuat, mengelola, mengedit, dan mengarsipkan kelas secara digital sehingga proses pembelajaran menjadi lebih terstruktur", image: "/images/classmanagement.png" },
+      { title: "Assignment Management", desc: "Mendukung pembuatan, distribusi, dan pengelolaan tugas lengkap dengan deskripsi, lampiran, dan batas waktu pengumpulan.", image: "/images/managementtugas.png" },
+      { title: "Online Assignment Submission", desc: "Memudahkan siswa mengumpulkan tugas secara online, memantau status pengumpulan, serta mengelola revisi sebelum tenggat waktu berakhir", image: "/images/upload tugas.png" },
+      { title: "People & Class Collaboration", desc: "Menampilkan informasi pengajar dan anggota kelas untuk mendukung kolaborasi dalam proses pembelajaran", image: "/images/anggotaclass.png" },
+      { title: "Assignment Timeline", desc: "Membantu siswa memantau tugas berdasarkan status To-Do, Completed, dan Overdue sehingga aktivitas belajar lebih terorganisir", image: "/images/statustugas.png" },
+    ],
+    // designSystem: {
+    //   colors: [
+    //     { name: "Accent (Red)", hex: "#ef4136" },
+    //     { name: "Primary (Dark Navy)", hex: "#02353d" },
+    //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
+    //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
+    //     { name: "Dark (Black)", hex: "#231f20" },
+    //     { name: "Light (Off-white)", hex: "#efefef" }
+    //   ],
+    //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
+    //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
+    // }
   },
   {
     id: "ud-tani-rejo",
     title: "Aplikasi Jejak Padi",
     company: "UD Tani Rejo (Program Kreativitas Mahasiswa)",
-    role: "UI/UX Designer & Frontend Developer",
+    role: "Frontend Developer & Quality Assurance",
     period: "Feb 2024 - Mei 2024",
     description: "Aplikasi berbasis cloud computing yang dikembangkan untuk mengoptimalkan sistem ketertelusuran dalam rantai pasok beras ekspor.",
-    impact: [
-      "Meningkatkan transparansi rantai pasok beras melalui sistem ketertelusuran digital yang terintegrasi.",
-      "Mempermudah pencatatan dan monitoring data produksi, distribusi, dan kualitas beras secara real-time.",
-      "Membantu pelaku usaha dalam menjaga standar jaminan mutu untuk kebutuhan ekspor.",
-      "Menghasilkan prototype website dan mobile application yang berfokus pada kebutuhan pengguna dan proses bisnis pertanian."
+    roleDetails: [
+      "Berkontribusi dalam pengembangan platform ketertelusuran beras berbasis web melalui Program Kreativitas Mahasiswa (PKM).",
+      "Berpartisipasi dalam User Acceptance Testing (UAT) bersama mitra untuk memvalidasi sistem sebelum implementasi",
+      "Memastikan aplikasi memenuhi kebutuhan pengguna berdasarkan hasil validasi bersama mitra.",
+      "Berkolaborasi dengan tim pengembang dalam proses evaluasi dan penyempurnaan sistem berdasarkan hasil UAT.",
+
     ],
-    tags: ["UI/UX Design", "Product Design", "Dashboard Design", "Mobile App Design", "User Research", "Design Thinking", "AgriTech", "Supply Chain Management"],
+    impact: [
+      "Memvalidasi 6 aspek utama sistem bersama mitra sebelum implementasi.",
+      "Membantu memastikan aplikasi memenuhi kebutuhan operasional pengguna melalui proses User Acceptance Testing (UAT).",
+      "Mendukung tim pengembang dalam proses evaluasi dan penyempurnaan aplikasi berdasarkan hasil validasi pengguna.",
+      "Berkontribusi dalam pengembangan platform ketertelusuran beras berbasis web untuk meningkatkan transparansi rantai pasok."
+    ],
+    tags: ["Software QA","Functional Testing","User Acceptance Testing","Test Case Design","Web Testing","Cloud Computing","QR Code","Rice Traceability","Quality Assurance"],
     platform: "Web Dashboard",
-    tools: ["Figma"],
+    tools: ["GitHub, Chrome, Laravel"],
     problem: "Proses pencatatan dan pelacakan produksi beras masih dilakukan secara manual sehingga menyulitkan pemantauan kualitas produk, distribusi, dan riwayat produksi. Kurangnya transparansi dalam rantai pasok juga menjadi tantangan untuk memenuhi standar ekspor dan meningkatkan kepercayaan konsumen.",
     goal: "Merancang platform JejakPadi berbasis website dan mobile yang mampu mendigitalisasi proses ketertelusuran beras, meningkatkan transparansi data, mendukung jaminan mutu, serta mempermudah monitoring rantai pasok secara terintegrasi.",
     research: [
@@ -130,162 +248,80 @@ const projects: Project[] = [
     //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
     // }
   },
-  {
-    id: "jejak-patroli",
-    title: "JejakPatroli - Patrol Management & Monitoring System",
-    company: "Politeknik Negeri Jember",
-    role: "UI/UX Designer & Frontend Developer",
-    period: "Agu 2024 - Des 2024",
-    description: "Merancang aplikasi mobile dan web dashboard untuk membantu organisasi dalam mengelola aktivitas patroli keamanan, memantau kehadiran petugas secara real-time, serta mendigitalisasi proses pelaporan patroli yang sebelumnya dilakukan secara manual",
-    impact: [
-      "Meningkatkan transparansi dan akurasi aktivitas patroli melalui sistem monitoring berbasis GPS.",
-      "Mempermudah verifikasi kehadiran petugas menggunakan kombinasi lokasi GPS dan dokumentasi foto.",
-      "Membantu admin memantau status patroli secara real-time melalui dashboard terpusat.",
-      "Mengurangi penggunaan laporan manual dengan sistem pelaporan digital yang terdokumentasi dan mudah diakses."
-    ],
-    tags: ["UI/UX Design","Product Design","Mobile App Design","Dashboard Design","User Research","Design Thinking","GPS Tracking","Real-time Monitoring"],
-    platform: "Mobile Application & Web Dashboard",
-    tools: ["Figma", "Laravel (Blade)", "Tailwind CSS"],
-    problem: "Proses pencatatan kehadiran dan aktivitas patroli keamanan masih dilakukan secara manual sehingga rentan terhadap kesalahan pencatatan, keterlambatan laporan, serta sulitnya proses monitoring dan verifikasi aktivitas petugas di lapangan.",
-    goal: "Merancang sistem patroli keamanan berbasis mobile dan website yang mampu mempermudah presensi, monitoring aktivitas patroli secara real-time, serta pengelolaan laporan keamanan yang lebih akurat dan transparan",
-    research: [
-      { title: "User Research", desc:"Melakukan analisis kebutuhan petugas keamanan dan kepala keamanan untuk memahami tantangan dalam proses patroli dan pelaporan lapangan."},
-      { title: "Competitor Analysis", desc: "Menganalisis aplikasi patroli keamanan seperti QR-Patrol dan GuardPatrolling untuk mengidentifikasi peluang peningkatan pengalaman pengguna." },
-      { title: "Workflow Analysis", desc: "Mempelajari alur kerja patroli konvensional untuk mengidentifikasi hambatan operasional dan peluang digitalisasi proses patroli" }
-    ],
-    mainFeatures: ["Presensi Petugas", "Monitoring Real-time", "Manajemen Jadwal", "Laporan Patroli", "Riwayat Laporan",],
-    userFlow: ["Login","Check Assigned Schedule","Verify Attendance","Conduct Patrol","Upload Report & Documentation","Admin Monitors Activity","View Patrol History"],
-    wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
-    highFidelity: [
-      { title: "Presensi Petugas", desc: "Memungkinkan petugas melakukan presensi menggunakan validasi GPS dan dokumentasi foto untuk memastikan kehadiran tercatat secara akurat dan transparan", image: "/images/presensi patrol.png" },
-      { title: "Monitoring Real-Time", desc: "Menyediakan dashboard pemantauan yang memungkinkan admin melihat status patroli, lokasi petugas, dan aktivitas keamanan secara langsung", image: "/images/location patrol.png" },
-      { title: "Manajemen Jadwal", desc: "Membantu admin mengatur, memperbarui, dan mendistribusikan jadwal patroli kepada petugas secara terpusat dan terorganisir.", image: "/images/jadwal patrol.png" },
-      { title: "Laporan Patroli", desc: "Memungkinkan petugas mengirim laporan patroli lengkap dengan foto, video, dan informasi kondisi keamanan langsung dari aplikasi", image: "/images/laporan patrol.png" },
-      { title: "Riwayat Laporan", desc: "Menyimpan seluruh aktivitas dan laporan patroli dalam satu sistem sehingga mudah ditinjau kembali untuk kebutuhan monitoring dan evaluasi", image: "/images/riwayat patrol.png" }
-    ],
-    // designSystem: {
-    //   colors: [
-    //     { name: "Accent (Red)", hex: "#ef4136" },
-    //     { name: "Primary (Dark Navy)", hex: "#02353d" },
-    //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
-    //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
-    //     { name: "Dark (Black)", hex: "#231f20" },
-    //     { name: "Light (Off-white)", hex: "#efefef" }
-    //   ],
-    //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
-    //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
-    // }
-  },
-    {
-    id: "pharmaflow",
-    title: "PharmaFlow - Drug Sales & Inventory Management System",
-    company: "Academic Project",
-    role: "UI/UX Designer & Full Stack Developer",
-    period: "Feb 2026 - Jun2026",
-    description: "Merancang sistem manajemen penjualan dan inventaris obat berbasis web yang membantu apotek dalam mengelola data obat, memantau stok, mencatat transaksi penjualan, serta mengoptimalkan proses operasional secara digital",
-    impact: [
-    "Mempermudah pengelolaan data obat, pelanggan, dan supplier dalam satu platform terintegrasi.",
-    "Meningkatkan efisiensi pencatatan transaksi penjualan dan pembelian obat.",
-    "Membantu pengguna memantau stok obat melalui sistem peringatan stok rendah secara real-time.",
-    "Menyediakan dashboard yang informatif untuk mendukung pengambilan keputusan operasional."
-    ],
-    tags: [ "UI/UX Design","Product Design","Backend Development","Web Application","Dashboard Design","Inventory Management","Database Management","Information System"],
-    platform: "Web Dashboard",
-    tools: [ "Figma","Laravel","Tailwind CSS","PHP","MySQL"],
-    problem: 'Pengelolaan data obat, stok, pelanggan, dan transaksi yang masih dilakukan secara manual dapat menyebabkan kesalahan pencatatan, keterlambatan pembaruan stok, serta kesulitan dalam memantau aktivitas penjualan secara menyeluruh.',
-    goal: "Merancang sistem penjualan dan inventaris obat yang mampu menyederhanakan proses operasional apotek melalui pengelolaan data yang terintegrasi, monitoring stok yang lebih efektif, dan pencatatan transaksi yang efisien.",
-    research: [
-      { title: "User Research", desc:"Mempelajari kebutuhan pengguna dalam proses pengelolaan obat, transaksi penjualan, dan pemantauan stok untuk menghasilkan solusi yang mudah digunakan"},
-      { title: "Workflow Analysis", desc: "Menganalisis alur bisnis penjualan dan inventaris obat untuk mengidentifikasi hambatan serta peluang peningkatan efisiensi." },
-      { title: "Dashboard Planning", desc: "Merancang struktur informasi dan visualisasi data agar pengguna dapat memantau kondisi inventaris dan transaksi dengan cepat" }
-    ],
-    mainFeatures: ["Manajemen Inventaris Obat", "Transaksi Penjualan", "Pencarian Obat", "Monitoring Stok", "Manajemen Pelanggan & Supplier",],
-    userFlow: ["Login","Dashboard Overview","View Drug Inventory","Search Drug","Create Sales Transaction","Update Stock","Manage Customers & Suppliers","View Reports"],
-    wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
-    highFidelity: [
-      { title: "Dashboard Overview", desc: "Dashboard yang menampilkan ringkasan jumlah obat, stok rendah, transaksi penjualan, dan total stok secara visual dan mudah dipahami.", image: "/images/dashboard pharma.png" },
-      { title: "Drug Inventory", desc: "Halaman inventaris yang memungkinkan pengguna mengelola data obat dan memantau ketersediaan stok.", image: "/images/stok obat.png" },
-      { title: "Sales Transaction", desc: "Antarmuka transaksi penjualan yang dirancang untuk mempercepat proses pencatatan pembelian obat.", image: "/images/transaksi obat.png" },
-      { title: "Stock Alert System", desc: "Menampilkan data penjualan secara terperinci dan terorganisir untuk membantu pemantauan transaksi serta evaluasi kinerja penjualan", image: "/images/laporan penjualan.png" },
-    ],
-    // designSystem: {
-    //   colors: [
-    //     { name: "Accent (Red)", hex: "#ef4136" },
-    //     { name: "Primary (Dark Navy)", hex: "#02353d" },
-    //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
-    //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
-    //     { name: "Dark (Black)", hex: "#231f20" },
-    //     { name: "Light (Off-white)", hex: "#efefef" }
-    //   ],
-    //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
-    //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
-    // }
-  },
 
-    {
-    id: "assignme",
-    title: "AssignMe - Learning & Assignment Management Platform",
-    company: "Academic Project",
-    role: "Product Designer & Full Stack Developer",
-    period: "Feb 2026 - Jun2026",
-    description: "AssignMe adalah platform manajemen pembelajaran berbasis web yang dirancang untuk menyederhanakan proses distribusi materi, pengelolaan kelas, dan pengumpulan tugas secara digital. Dengan pengalaman pengguna yang intuitif, AssignMe membantu pengajar dan siswa berkolaborasi lebih efektif dalam lingkungan pembelajaran yang terorganisir, fleksibel, dan mudah diakses kapan saja",
-    impact: [
-    "Meningkatkan efisiensi proses pembelajaran dengan mengintegrasikan pengelolaan kelas, materi, dan tugas dalam satu platform.",
-    "Membantu siswa mengakses materi pembelajaran dan mengumpulkan tugas secara lebih praktis tanpa batasan lokasi.",
-    "Mengurangi risiko keterlambatan pengumpulan tugas melalui sistem notifikasi dan pengingat otomatis.",
-    "Menciptakan pengalaman belajar yang lebih terstruktur, kolaboratif, dan terdokumentasi dengan baik bagi pengajar maupun siswa."
-    ],
-    tags: [ "UI/UX Design","Backend Development","Web Application","Education Technology","Learning Management System","Database Design","System Analysis","Information System"],
-    platform: "Web Dashboard",
-    tools: [ "Figma","Laravel","Tailwind CSS","PHP","MySQL"],
-    problem: 'Proses distribusi materi dan pengumpulan tugas secara manual sering menyebabkan kesulitan dalam pengelolaan kelas, keterlambatan pengumpulan tugas, serta kurangnya transparansi antara pengajar dan siswa dalam memantau aktivitas pembelajaran.',
-    goal: "Merancang platform pembelajaran daring yang memudahkan pengajar dalam mengelola kelas dan tugas, serta memberikan pengalaman belajar yang lebih fleksibel, terorganisir, dan mudah diakses bagi siswa",
-    research: [
-      { title: "User Research", desc:"Menganalisis kebutuhan pengajar dan siswa untuk memahami kendala yang sering terjadi dalam proses pembelajaran dan pengumpulan tugas secara online."},
-      { title: "Workflow Analysis", desc: "Mempelajari alur pengelolaan kelas, distribusi materi, dan pengumpulan tugas untuk menciptakan proses yang lebih efisien." },
-      { title: "Information Architecture", desc: "Menyusun struktur navigasi dan alur pengguna agar pengajar maupun siswa dapat mengakses fitur dengan mudah" }
-    ],
-    mainFeatures: ["Class Management", "Assignment Management", "Online Assignment Submission", "Learning Materials","Assignment Timeline",],
-    userFlow: ["Register / Login","Join or Create Class","Access Learning Materials","View Assignments","Submit Assignment","Track Submission Status","People & Class Collaboration"],
-    wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
-    highFidelity: [
-      { title: "Class Management", desc: "Memungkinkan pengajar membuat, mengelola, mengedit, dan mengarsipkan kelas secara digital sehingga proses pembelajaran menjadi lebih terstruktur", image: "/images/classmanagement.png" },
-      { title: "Assignment Management", desc: "Mendukung pembuatan, distribusi, dan pengelolaan tugas lengkap dengan deskripsi, lampiran, dan batas waktu pengumpulan.", image: "/images/managementtugas.png" },
-      { title: "Online Assignment Submission", desc: "Memudahkan siswa mengumpulkan tugas secara online, memantau status pengumpulan, serta mengelola revisi sebelum tenggat waktu berakhir", image: "/images/upload tugas.png" },
-      { title: "People & Class Collaboration", desc: "Menampilkan informasi pengajar dan anggota kelas untuk mendukung kolaborasi dalam proses pembelajaran", image: "/images/anggotaclass.png" },
-      { title: "Assignment Timeline", desc: "Membantu siswa memantau tugas berdasarkan status To-Do, Completed, dan Overdue sehingga aktivitas belajar lebih terorganisir", image: "/images/statustugas.png" },
-    ],
-    // designSystem: {
-    //   colors: [
-    //     { name: "Accent (Red)", hex: "#ef4136" },
-    //     { name: "Primary (Dark Navy)", hex: "#02353d" },
-    //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
-    //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
-    //     { name: "Dark (Black)", hex: "#231f20" },
-    //     { name: "Light (Off-white)", hex: "#efefef" }
-    //   ],
-    //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
-    //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
-    // }
-  },
+ 
+  //   {
+  //   id: "pharmaflow",
+  //   title: "PharmaFlow - Drug Sales & Inventory Management System",
+  //   company: "Academic Project",
+  //   role: "UI/UX Designer & Full Stack Developer",
+  //   period: "Feb 2026 - Jun2026",
+  //   description: "Merancang sistem manajemen penjualan dan inventaris obat berbasis web yang membantu apotek dalam mengelola data obat, memantau stok, mencatat transaksi penjualan, serta mengoptimalkan proses operasional secara digital",
+  //   impact: [
+  //   "Mempermudah pengelolaan data obat, pelanggan, dan supplier dalam satu platform terintegrasi.",
+  //   "Meningkatkan efisiensi pencatatan transaksi penjualan dan pembelian obat.",
+  //   "Membantu pengguna memantau stok obat melalui sistem peringatan stok rendah secara real-time.",
+  //   "Menyediakan dashboard yang informatif untuk mendukung pengambilan keputusan operasional."
+  //   ],
+  //   tags: [ "UI/UX Design","Product Design","Backend Development","Web Application","Dashboard Design","Inventory Management","Database Management","Information System"],
+  //   platform: "Web Dashboard",
+  //   tools: [ "Figma","Laravel","Tailwind CSS","PHP","MySQL"],
+  //   problem: 'Pengelolaan data obat, stok, pelanggan, dan transaksi yang masih dilakukan secara manual dapat menyebabkan kesalahan pencatatan, keterlambatan pembaruan stok, serta kesulitan dalam memantau aktivitas penjualan secara menyeluruh.',
+  //   goal: "Merancang sistem penjualan dan inventaris obat yang mampu menyederhanakan proses operasional apotek melalui pengelolaan data yang terintegrasi, monitoring stok yang lebih efektif, dan pencatatan transaksi yang efisien.",
+  //   research: [
+  //     { title: "User Research", desc:"Mempelajari kebutuhan pengguna dalam proses pengelolaan obat, transaksi penjualan, dan pemantauan stok untuk menghasilkan solusi yang mudah digunakan"},
+  //     { title: "Workflow Analysis", desc: "Menganalisis alur bisnis penjualan dan inventaris obat untuk mengidentifikasi hambatan serta peluang peningkatan efisiensi." },
+  //     { title: "Dashboard Planning", desc: "Merancang struktur informasi dan visualisasi data agar pengguna dapat memantau kondisi inventaris dan transaksi dengan cepat" }
+  //   ],
+  //   mainFeatures: ["Manajemen Inventaris Obat", "Transaksi Penjualan", "Pencarian Obat", "Monitoring Stok", "Manajemen Pelanggan & Supplier",],
+  //   userFlow: ["Login","Dashboard Overview","View Drug Inventory","Search Drug","Create Sales Transaction","Update Stock","Manage Customers & Suppliers","View Reports"],
+  //   wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
+  //   highFidelity: [
+  //     { title: "Dashboard Overview", desc: "Dashboard yang menampilkan ringkasan jumlah obat, stok rendah, transaksi penjualan, dan total stok secara visual dan mudah dipahami.", image: "/images/dashboard pharma.png" },
+  //     { title: "Drug Inventory", desc: "Halaman inventaris yang memungkinkan pengguna mengelola data obat dan memantau ketersediaan stok.", image: "/images/stok obat.png" },
+  //     { title: "Sales Transaction", desc: "Antarmuka transaksi penjualan yang dirancang untuk mempercepat proses pencatatan pembelian obat.", image: "/images/transaksi obat.png" },
+  //     { title: "Stock Alert System", desc: "Menampilkan data penjualan secara terperinci dan terorganisir untuk membantu pemantauan transaksi serta evaluasi kinerja penjualan", image: "/images/laporan penjualan.png" },
+  //   ],
+  //   // designSystem: {
+  //   //   colors: [
+  //   //     { name: "Accent (Red)", hex: "#ef4136" },
+  //   //     { name: "Primary (Dark Navy)", hex: "#02353d" },
+  //   //     { name: "Secondary (Dark Teal)", hex: "#0d6176" },
+  //   //     { name: "Highlight (Light Blue)", hex: "#48acc5" },
+  //   //     { name: "Dark (Black)", hex: "#231f20" },
+  //   //     { name: "Light (Off-white)", hex: "#efefef" }
+  //   //   ],
+  //   //   typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
+  //   //   components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
+  //   // }
+  // },
+
+ 
       {
     id: "sip-laundry",
     title: "SIP Laundry - Laundry Management & Point of Sale System",
     company: "Academic Project",
-    role: "UI/UX Designer & Project Manager",
+    role: "Quality Assurance & Project Manager",
     period: "Feb 2023 - May 2023",
     description: "SIP Laundry adalah aplikasi kasir berbasis desktop yang dirancang untuk membantu pemilik usaha laundry dalam mengelola transaksi, pelanggan, dan operasional bisnis secara lebih efisien. Sistem ini mengintegrasikan pencatatan transaksi, manajemen pelanggan, laporan keuangan otomatis, pembayaran digital, dan autentikasi RFID dalam satu platform yang terpusat.",
-    impact: [
-        "Mengelola perencanaan dan pelaksanaan proyek menggunakan metode Scrum untuk memastikan pengembangan berjalan sesuai target.",
-        "Merancang dan mengevaluasi antarmuka pengguna agar proses transaksi dan pengelolaan operasional laundry lebih mudah digunakan.",
-        "Berkolaborasi dengan tim pengembang untuk memastikan implementasi desain sesuai kebutuhan pengguna dan tujuan bisnis.",
-        "Melaksanakan Black Box Testing dan User Acceptance Testing (UAT) yang membantu mengurangi bug hingga 90% sebelum deployment.",
-        "Meningkatkan usability aplikasi melalui evaluasi UI/UX dan pengujian pengguna sehingga alur kerja menjadi lebih efisien.",
-        "Mengidentifikasi risiko proyek dan mengimplementasikan solusi untuk menjaga kualitas serta kelancaran pengembangan sistem."
+    roleDetails: [
+      "Melaksanakan Black Box Testing pada 8 modul utama aplikasi desktop.",
+      "Menguji fitur Login RFID, Forgot Password, CRUD, Search, Detail Transaksi, dan perubahan status transaksi menggunakan Functional Testing.",
+      "Memvalidasi hasil pengujian berdasarkan expected result untuk memastikan seluruh fitur berjalan sesuai kebutuhan sistem.",
+      "Berpartisipasi dalam 13 kali weekly monitoring & controlling project untuk mengevaluasi perubahan kebutuhan sistem dan implementasi fitur.",
+      "Berkolaborasi dengan tim pengembang dalam proses validasi fitur sebelum aplikasi digunakan.",
+
     ],
-    tags: [ "Project Management","Quality Assurance","Software Testing","Scrum","Desktop Application","Point of Sale System","Usability Testing","Business Information System"],
+    impact: [
+        "Memastikan 8 modul utama aplikasi desktop berfungsi sesuai kebutuhan melalui Black Box Testing dan Functional Testing.",
+        "Mendukung validasi fitur seperti Login RFID, Forgot Password, CRUD, Search, Detail Transaksi, dan perubahan status transaksi sebelum implementasi.",
+        "BBerpartisipasi dalam 13 sesi weekly monitoring & controlling untuk mengevaluasi perubahan kebutuhan sistem dan implementasi fitur.",
+        "Membantu memastikan seluruh skenario pengujian memperoleh hasil valid sebelum aplikasi digunakan.",
+    ],
+    tags: [  "Software QA","Black Box Testing","Functional Testing","Desktop Application","Test Case Design","Manual Testing","Quality Assurance","Java Desktop","MySQL","Project Monitoring"
+],
     platform: "Desktop Application",
-    tools: ["Figma","Trello","Microsoft Excel","Black Box Testing","User Acceptance Testing"],
+    tools: ["GitHub", "Java Swing", "MySQL", "Chrome", "Trello", "Microsoft Excel", "Black Box Testing", "User Acceptance Testing"],
     problem: 'Proses pencatatan transaksi dan pengelolaan operasional laundry yang masih dilakukan secara manual berpotensi menyebabkan kesalahan pencatatan, kesulitan dalam memantau transaksi, serta kurang efektifnya pengelolaan data pelanggan dan laporan keuangan',
     goal: "Mengembangkan sistem manajemen laundry yang mampu mengotomatisasi proses transaksi, pengelolaan pelanggan, dan pelaporan bisnis sehingga operasional usaha menjadi lebih efisien, akurat, dan mudah dipantau",
     research: [
@@ -329,33 +365,25 @@ const projectImages: Record<string, string> = {
 
 const skills: Skill[] = [
   {
-    category: "Desain",
-    items: [ "UI Design",
-      "UX Design",
-      "Figma",
-      "Wireframing",
-      "Prototyping",
-      "Design System",
-      "User Research",
-      "Usability Testing",
-      "Dashboard Design",
-      "Mobile Design"]
+    category: "Software Testing",
+    items: [ "Black Box Testing","Functional Testing","Automation Testing","User Acceptance Testing","Usability Testing","Test Case Design","Test Scenario","Bug Reporting","Regression Testing","Manual Testing"
+     ]
   },
   {
     category: "Pengembangan",
-    items: ["Laravel",
-      "PHP",
+    items: ["Katalon Studio",
+      "Postman",
+      "Maze",
+      "GitHub",
+      "Git",
+      "Chrome DevTools",
+      "Android Emulator",
       "MySQL",
-      "Tailwind CSS",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "REST API",
-      "Git"]
+      "Laravel","REST API"]
   },
   {
-    category: "Keahlian Interpersonal",
-    items: [ "Project Management",
+    category: "Professional Skills",
+    items: [ "Project Management","Attention to Detail","Adaptability",
       "Scrum",
       "Leadership",
       "Communication",
@@ -420,12 +448,13 @@ export default function App() {
               </motion.div>
               
               <h1 className="text-4xl md:text-7xl font-black tracking-tight mb-8 leading-[0.95]">
-                <span className="text-gradient">Merancang</span> <span className="text-slate-400">Solusi Digital yang Intuitif</span> <br />
-                <span className="text-gradient">dan Berdampak</span>
+        
+                <span className="text-gradient">Menghadirkan</span> <span className="text-slate-400">Perangkat Lunak </span> <br />
+                <span className="text-gradient">Berkualitas</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed max-w-2xl font-medium">
-                Saya Ardianti, UI/UX Designer dengan latar belakang Teknik Informatika yang berfokus pada perancangan produk digital yang intuitif, fungsional, dan berorientasi pada kebutuhan pengguna.
+                Saya Ardianti, seorang Quality Assurance dengan latar belakang Teknik Informatika yang berfokus pada pengujian aplikasi web, mobile, dan desktop untuk memastikan setiap fitur berjalan sesuai kebutuhan pengguna melalui manual testing, automation testing, dan validasi sistem.
               </p>
 
               <div className="flex flex-wrap gap-4 items-center">
@@ -458,7 +487,7 @@ export default function App() {
       <section id="about" className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
-            <h2 className="text-4xl md:text-5xl font-black">Filosofi Desain</h2>
+            <h2 className="text-4xl md:text-5xl font-black">Filosofi</h2>
             <p className="text-slate-500 max-w-md text-right hidden md:block">Mengubah kebutuhan pengguna menjadi pengalaman digital yang sederhana, efektif, dan bernilai.</p>
           </div>
 
@@ -469,10 +498,10 @@ export default function App() {
                 <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
                   <Sparkles size={24} />
                 </div>
-                <h3 className="text-2xl font-bold mb-1">Pengalaman Profesional </h3>
-                <h3 className="text-2xl font-bold mb-4">UI/UX Designer Intern — PT Dua Empat Tujuh</h3>
+                <h3 className="text-2xl font-bold mb-1">Pengalaman  </h3>
+                {/* <h3 className="text-2xl font-bold mb-4">UI/UX Designer Intern — PT Dua Empat Tujuh</h3> */}
                 <p className="text-slate-600 leading-relaxed text-lg">
-                  Berkontribusi dalam proses perancangan antarmuka web dan mobile, pembuatan wireframe, prototype, serta pengembangan design system untuk mendukung kebutuhan pengguna dan bisnis.
+                  Berpengalaman melakukan pengujian aplikasi web, mobile, dan desktop melalui Black Box Testing, Functional Testing, User Acceptance Testing (UAT), Usability Testing, serta Automation Testing. Terbiasa menyusun test case, mendokumentasikan hasil pengujian, dan berkolaborasi dengan developer untuk memastikan kualitas aplikasi.
                 </p>
               </div>
               <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -481,16 +510,16 @@ export default function App() {
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">IPK Kumulatif</p>
                 </div>
                 <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                  <p className="text-3xl font-black text-primary">3+</p>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Tahun Mempelajari UI/UX Design</p>
+                  <p className="text-3xl font-black text-primary">5+</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">TMetode Pengujian</p>
                 </div>
                 <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex-1">
-                  <p className="text-3xl font-black text-primary">10+</p>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Proyek Digital</p>
+                  <p className="text-3xl font-black text-primary">4+</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Proyek QA</p>
                 </div>
                 <div className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
-                  <p className="text-3xl font-black text-primary">5+</p>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Prototype Interaktif</p>
+                  <p className="text-3xl font-black text-primary">20+</p>
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Skenario Pengujian</p>
                 </div>
               </div>
             </div>
@@ -511,8 +540,8 @@ export default function App() {
             <div className="md:col-span-2 bg-accent rounded-[2.5rem] p-10 text-white flex flex-col justify-between">
               <Layout size={50} />
               <div>
-                <h3 className="text-xl font-bold mb-5">Desain Dashboard dan Sistem Informasi</h3>
-                <p className="text-white/80 text-sm">Berpengalaman merancang dashboard, sistem informasi, dan antarmuka aplikasi yang membantu pengguna mengakses informasi dengan lebih cepat, jelas, dan efisien.</p>
+                <h3 className="text-xl font-bold mb-5">Pengujian Aplikasi Web, Mobile, dan Desktop</h3>
+                <p className="text-white/80 text-sm">Berpengalaman melakukan pengujian aplikasi web, mobile, dan desktop melalui Black Box Testing, User Acceptance Testing (UAT), Usability Testing, serta Automation Testing untuk memastikan aplikasi berjalan sesuai kebutuhan pengguna.</p>
               </div>
             </div>
 
@@ -562,12 +591,12 @@ export default function App() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
             <h2 className="text-4xl md:text-5xl font-black mb-4">Karya Terpilih</h2>
-            <p className="text-slate-500">Proyek-proyek yang mendefinisikan standar desain saya.</p>
+            <p className="text-slate-500">Proyek pengujian aplikasi web, mobile, dan desktop untuk memastikan kualitas perangkat lunak.</p>
           </div>
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <div className="px-6 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">UI/UX</div>
             <div className="px-6 py-2 bg-white border border-slate-200 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">Frontend</div>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -761,31 +790,375 @@ export default function App() {
                   </section>
 
                   {/* 2. Problem & Goal */}
-                  {selectedProject.problem && (
-                    <section className="grid md:grid-cols-2 gap-12">
-                      <div className="space-y-6">
-                        <h4 className="text-2xl font-black flex items-center gap-2">
-                          <div className="w-1.5 h-6 bg-red-500 rounded-full" />
-                          Problem
-                        </h4>
-                        <p className="text-slate-600 leading-relaxed font-medium">
-                          {selectedProject.problem}
-                        </p>
-                      </div>
-                      <div className="space-y-6">
-                        <h4 className="text-2xl font-black flex items-center gap-2">
-                          <div className="w-1.5 h-6 bg-accent rounded-full" />
-                          Goal
-                        </h4>
-                        <p className="text-slate-600 leading-relaxed font-medium">
-                          {selectedProject.goal}
-                        </p>
-                      </div>
-                    </section>
+                      {selectedProject.problem && (
+                        <>
+                          {/* Problem & Goal removed as requested */}
+                          {selectedProject.roleDetails && (
+                        <section className="mt-10 bg-slate-50 text-slate-900 p-6 md:p-8 rounded-[2rem] border border-slate-200">
+                          <h4 className="text-xl md:text-2xl font-black mb-6">My Role</h4>
+                          <div className="grid gap-3">
+                            {selectedProject.roleDetails.map((item, i) => (
+                              <div key={i} className="flex gap-4 items-start">
+                                <div className="mt-1 shrink-0 text-accent">
+                                  <CheckCircle2 size={18} />
+                                </div>
+                                <p className="text-sm md:text-base font-semibold leading-snug">{item}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </section>
+                      )}
+
+                      {selectedProject.id === "ud-tani-rejo" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
+                            Testing Strategy
+                          </h4>
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">User Acceptance Testing (UAT)</h5>
+                              <p className="text-sm text-slate-600">Melakukan validasi aplikasi bersama mitra UD Tani Rejo untuk memastikan sistem telah memenuhi kebutuhan operasional dan siap digunakan oleh pengguna.</p>
+                            </div>
+  
+                          </div>
+                        </section>
+                      )}
+
+                      {/* {selectedProject.mainFeatures && selectedProject.id !== "jejak-patroli" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
+                            Modules Tested
+                          </h4>
+                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                            {selectedProject.mainFeatures.map((feature, i) => (
+                              <div key={i} className="bg-gradient-to-br from-slate-50 to-slate-100 p-4 rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all group">
+                                <div className="flex items-center gap-2 mb-2">
+                                  <div className="h-2 w-2 rounded-full bg-blue-500 group-hover:scale-125 transition-transform" />
+                                  <p className="text-sm font-bold text-slate-900">{feature}</p>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </section>
+                      )} */}
+                      
+
+                      {selectedProject.id === "jejak-patroli" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
+                            Testing Strategy
+                          </h4>
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Black Box Testing</h5>
+                              <p className="text-sm text-slate-600">Menguji fungsi aplikasi berdasarkan kebutuhan sistem tanpa melihat source code.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Functional Testing</h5>
+                              <p className="text-sm text-slate-600">Memastikan setiap fitur menghasilkan output sesuai expected result.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Automation Testing</h5>
+                              <p className="text-sm text-slate-600">Melakukan automation testing menggunakan Katalon Studio untuk meningkatkan efisiensi pengujian.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">User Acceptance Testing</h5>
+                              <p className="text-sm text-slate-600">Memastikan sistem memenuhi kebutuhan pengguna.</p>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "assignme" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
+                            Testing Strategy
+                          </h4>
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Black Box Testing</h5>
+                              <p className="text-sm text-slate-600">Melakukan pengujian terhadap fitur utama aplikasi berdasarkan skenario pengujian tanpa melihat implementasi kode sumber, untuk memastikan setiap fungsi berjalan sesuai kebutuhan sistem.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Usability Testing</h5>
+                              <p className="text-sm text-slate-600">Melakukan evaluasi pengalaman pengguna menggunakan Maze untuk mengukur kemudahan penggunaan, efektivitas alur navigasi, dan keberhasilan pengguna dalam menyelesaikan tugas.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">User Acceptance Testing (UAT)</h5>
+                              <p className="text-sm text-slate-600">Melakukan validasi aplikasi bersama pengguna untuk memastikan sistem telah memenuhi kebutuhan bisnis dan siap digunakan.</p>
+                            </div>
+                            
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "sip-laundry" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
+                            Testing Strategy
+                          </h4>
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Black Box Testing</h5>
+                              <p className="text-sm text-slate-600">Melakukan pengujian terhadap fungsi aplikasi berdasarkan skenario pengujian tanpa melihat implementasi source code, untuk memastikan seluruh fitur berjalan sesuai kebutuhan.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Functional Testing</h5>
+                              <p className="text-sm text-slate-600">Melakukan pengujian terhadap setiap fungsi utama aplikasi, termasuk autentikasi, pengelolaan data, transaksi, dan perubahan status, untuk memastikan output sesuai dengan spesifikasi sistem.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 hover:shadow-lg transition-all">
+                              <h5 className="font-bold text-slate-900 mb-2">Project Monitoring & Controlling</h5>
+                              <p className="text-sm text-slate-600">Berpartisipasi dalam proses monitoring dan evaluasi mingguan guna meninjau perubahan kebutuhan sistem, implementasi fitur baru, serta kesiapan aplikasi sebelum digunakan.</p>
+                            </div>
+                            
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "ud-tani-rejo" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-emerald-500 rounded-full" />
+                            UAT Documentation
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                              <p className="text-sm font-bold text-slate-900 mb-4">Berdasarkan dokumen UAT, proses validasi mencakup:</p>
+                              <ul className="space-y-2">
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Fungsionalitas aplikasi</span>
+                                </li>
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Sistem pendukung keputusan</span>
+                                </li>
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Ketertelusuran QR Code</span>
+                                </li>
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Klasifikasi mutu beras</span>
+                                </li>
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Kemudahan penggunaan oleh admin</span>
+                                </li>
+                                <li className="flex gap-3 items-start">
+                                  <span className="text-accent font-bold mt-1">•</span>
+                                  <span className="text-sm text-slate-600">Pengalaman pengguna (User Experience)</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview UAT documentation:</p>
+                              <div className="rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-2xl bg-slate-100">
+                                <img
+                                  src="/images/uat jejakpadi.png"
+                                  alt="UAT Jejak Padi"
+                                  className="w-full h-auto object-contain"
+                                  referrerPolicy="no-referrer"
+                                />
+                              </div>
+                            </div>
+                            {/* <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1HtlnsHmqDfn-yWE7ZX6RKz2i6jwYU7Sn/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Test Cases
+                              </a>
+                            </div> */}
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "jejak-patroli" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-emerald-500 rounded-full" />
+                            Test Cases
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview PDF test cases:</p>
+                              <div className="aspect-[16/9] overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1HtlnsHmqDfn-yWE7ZX6RKz2i6jwYU7Sn/preview"
+                                  title="JejakPatroli Test Cases"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1HtlnsHmqDfn-yWE7ZX6RKz2i6jwYU7Sn/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Test Cases
+                              </a>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+
+                      {selectedProject.id === "jejak-patroli" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
+                            Automation Testing
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 text-slate-600 shadow-sm">
+                              <p className="text-sm font-semibold mb-2">Tools</p>
+                              <p className="text-sm">Katalon Studio</p>
+                               <p className="text-sm font-semibold mb-2">Github</p>
+                              <p className="text-sm"><a href="https://github.com/ardianti04/Katalon_JejakPatroli" target="_blank" rel="noopener noreferrer" className="text-primary underline">ardianti04/Katalon_JejakPatroli</a></p>
+                            </div>
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview PDF automation testing:</p>
+                              <div className="aspect-[16/9] overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1CEYgpLjNII0_7adQTXo3blf0zt6Yni64/preview"
+                                  title="JejakPatroli Automation Testing"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1CEYgpLjNII0_7adQTXo3blf0zt6Yni64/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Automation Testing
+                              </a>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "assignme" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-emerald-500 rounded-full" />
+                            Test Cases
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview PDF test cases:</p>
+                              <div className="aspect-[16/9] overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1HKYfnN62TDeHlDKMvsCOVnwViEa9-SJt/preview"
+                                  title="JejakPatroli Test Cases"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1HKYfnN62TDeHlDKMvsCOVnwViEa9-SJt/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Test Cases
+                              </a>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+
+                      {selectedProject.id === "assignme" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
+                            Usability Testing
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-5 text-slate-600 shadow-sm">
+                              <p className="text-sm font-semibold mb-2">Tools</p>
+                              <p className="text-sm">Maze</p>
+                            </div>
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview PDF automation testing:</p>
+                              <div className="aspect-[16/9] overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1S_yBevqXVCrI9P9AmcgjsJGp3iw3D0q1/preview"
+                                  title="JejakPatroli Automation Testing"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1S_yBevqXVCrI9P9AmcgjsJGp3iw3D0q1/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Automation Testing
+                              </a>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+                      {selectedProject.id === "sip-laundry" && (
+                        <section className="mt-10">
+                          <h4 className="text-2xl font-black flex items-center gap-2 mb-6">
+                            <div className="w-1.5 h-6 bg-emerald-500 rounded-full" />
+                            Test Cases
+                          </h4>
+                          <div className="max-w-4xl mx-auto space-y-6">
+                            <div className="mt-8">
+                              <p className="text-sm text-slate-500 mb-3">Preview PDF test cases:</p>
+                              <div className="aspect-[16/9] overflow-hidden rounded-[2rem] border border-slate-200 shadow-sm">
+                                <iframe
+                                  src="https://drive.google.com/file/d/1MynACcB_6rNTD3MDWiNtbOjijy3vtykF/preview"
+                                  title="JejakPatroli Test Cases"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <a
+                                href="https://drive.google.com/file/d/1MynACcB_6rNTD3MDWiNtbOjijy3vtykF/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-900 text-white px-6 py-3 font-semibold hover:bg-slate-800 transition-colors"
+                              >
+                                📄 View Complete Test Cases
+                              </a>
+                            </div>
+                          </div>
+                        </section>
+                      )}
+
+                      {selectedProject.impact && (
+                        <section className="mt-10 bg-accent text-slate-900 p-6 md:p-8 rounded-[2rem]">
+                          <h4 className="text-xl md:text-2xl font-black mb-6">Impact</h4>
+                          <div className="grid gap-3">
+                            {selectedProject.impact.map((item, i) => (
+                              <div key={i} className="flex gap-4 items-start p-4 bg-white/15 rounded-2xl border border-white/20">
+                                <div className="mt-1 shrink-0 text-accent">
+                                  <CheckCircle2 size={18} />
+                                </div>
+                                <p className="text-sm md:text-base font-semibold leading-snug">{item}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </section>
+                      )}
+                    </>
                   )}
 
-                  {/* 3. Research */}
-                  {selectedProject.research && (
+                  {/* {selectedProject.research && selectedProject.id !== "jejak-patroli" && (
                     <section className="space-y-10">
                       <h4 className="text-2xl font-black flex items-center gap-2">
                         <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
@@ -800,7 +1173,7 @@ export default function App() {
                         ))}
                       </div>
                       <div className="bg-slate-900 text-white p-8 rounded-3xl">
-                        <p className="text-[10px] font-black text-accent uppercase tracking-widest mb-4">Fitur Utama</p>
+                        <p className="text-[10px] font-black text-accent uppercase tracking-widest mb-4">Modules Tested</p>
                         <div className="flex flex-wrap gap-4">
                           {selectedProject.mainFeatures?.map(feature => (
                             <div key={feature} className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-xl border border-white/10">
@@ -811,10 +1184,9 @@ export default function App() {
                         </div>
                       </div>
                     </section>
-                  )}
+                  )} */}
 
-                  {/* 4. User Flow */}
-                  {selectedProject.userFlows ? (
+                  {/* {selectedProject.id !== "jejak-patroli" && (selectedProject.userFlows ? (
                     <section className="space-y-10">
                       <h4 className="text-2xl font-black flex items-center gap-2">
                         <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
@@ -859,7 +1231,7 @@ export default function App() {
                         ))}
                       </div>
                     </section>
-                  ) : null}
+                  ) : null)} */}
 
                   {/* 5. Wireframe */}
                   {/* {selectedProject.wireframes && (
@@ -879,8 +1251,7 @@ export default function App() {
                     </section>
                   )} */}
 
-                  {/* 6. UI Design (High Fidelity) */}
-                  {selectedProject.highFidelity && (
+                  {/* {selectedProject.highFidelity && selectedProject.id !== "jejak-patroli" && (
                     <section className="space-y-10">
                       <h4 className="text-2xl font-black flex items-center gap-2">
                         <div className="w-1.5 h-6 bg-pink-500 rounded-full" />
@@ -905,7 +1276,7 @@ export default function App() {
                         ))}
                       </div>
                     </section>
-                  )}
+                  )} */}
 
                   {/* 7. Design System */}
                   {selectedProject.designSystem && (
@@ -961,26 +1332,6 @@ export default function App() {
                       </div>
                     </section>
                   )}
-
-                  {/* 8. Result / Impact */}
-                  <section className="bg-accent text-slate-900 p-12 md:p-20 rounded-[4rem] relative overflow-hidden">
-                    <div className="absolute top-0 right-0 p-10 opacity-10">
-                      <Sparkles size={120} />
-                    </div>
-                    <div className="relative z-10">
-                      <h4 className="text-3xl md:text-4xl font-black mb-8">Result & Impact</h4>
-                      <div className="grid gap-6">
-                        {selectedProject.impact.map((item, i) => (
-                          <div key={i} className="flex gap-6 p-6 bg-white/20 backdrop-blur-md rounded-3xl border border-white/30">
-                            <div className="w-10 h-10 rounded-2xl bg-white flex items-center justify-center shrink-0">
-                              <CheckCircle2 size={20} className="text-accent" />
-                            </div>
-                            <p className="text-lg font-bold leading-tight">{item}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </section>
 
                   {/* CTA */}
                   <div className="p-12 bg-slate-900 rounded-[3rem] text-white text-center">
