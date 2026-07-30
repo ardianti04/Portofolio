@@ -32,51 +32,51 @@ import {
 import { Project, Skill } from "./types";
 
 const projects: Project[] = [
-//   {
-//     id: "dua-empat-tujuh",
-//     title: "Unified Dashboard & License Management System",
-//     company: "PT Dua Empat Tujuh (Solusi247)",
-//     role: "UI/UX Designer Intern",
-//     period: "Agu 2025 - Des 2025",
-//     description: "Merancang antarmuka pengguna untuk membantu tim bisnis dan operasional dalam memantau data klien, mengelola lisensi produk keamanan siber, serta mengakses informasi keamanan secara lebih efisien melalui pengalaman pengguna yang intuitif..",
-//     impact: [
-//       "Menyederhanakan proses pengelolaan klien dan lisensi dalam satu platform terpusat.",
-// "Meningkatkan efisiensi pemantauan status lisensi, aktivitas pengguna, dan performa layanan melalui visualisasi data yang jelas.",
-// "Membantu tim operasional mengakses informasi keamanan siber secara cepat dan terstruktur.",
-// "Menghasilkan desain antarmuka yang konsisten, mudah digunakan, dan selaras dengan kebutuhan bisnis serta pengguna."
-//     ],
-//     tags: ["UI/UX Design","Product Design","Dashboard Design","User Research","Design System","Cyber Security","Data Visualization","Web Application"],
-//     platform: "Web Dashboard",
-//     tools: ["Figma"],
-//     problem: "Pengelolaan data klien, lisensi produk, dan informasi keamanan siber masih tersebar pada berbagai sistem sehingga menyulitkan proses monitoring, pelaporan, serta pengambilan keputusan secara cepat dan akurat.",
-//     goal: "Merancang dashboard terintegrasi yang mampu mengonsolidasikan data klien, lisensi, dan keamanan siber ke dalam satu platform yang mudah digunakan, sehingga meningkatkan efisiensi operasional dan pengalaman pengguna.",
-//     research: [
-//       { title: "Design Thinking", desc:"Berkolaborasi secara rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis, teknis, dan pengguna."},
-//       { title: "Stakeholder Discussion", desc: "Diskusi rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis." },
-//       { title: "Workflow Analysis", desc: "Menganalisis alur kerja pengelolaan klien, lisensi, dan informasi keamanan guna menemukan peluang peningkatan efisiensi dan usability." }
-//     ],
-//     mainFeatures: ["Unified Dashboard", "License Generator", "Threat Intelligence", "CVE Database", "Client Management", "Support Ticket System"],
-//     userFlow: ["Login","Dashboard Overview","Manage Client Data","Monitor Security Information","Generate & Manage License","Handle Support Tickets","View Reports & Analytics"],
-//     wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
-//     highFidelity: [
-//       { title: "SOC Unified Dashboard", desc: "Pusat pemantauan aktivitas keamanan siber real-time dengan visualisasi Alert Volume Trend, Severity Breakdown, dan Quick IP Scoring dalam tema gelap yang intuitif.", image: "/images/unified dashboard.png" },
-//       { title: "Threat Intelligence & CVE", desc: "Penyajian data indikator ancaman (IOCs) dan database kerentanan (CVE) yang terstruktur.", image: "/images/threadintel.png" },
-//       { title: "License Management", desc: "Sistem pengelolaan data klien dan status lisensi (Active, Expired, Trial) secara menyeluruh.", image: "/images/home user.png" },
-//       { title: "Support System", desc: "Manajemen tiket dukungan dan kategori untuk penanganan masalah yang sistematis.", image: "/images/support feature.png" }
-//     ],
-//     designSystem: {
-//       colors: [
-//         { name: "Accent (Red)", hex: "#ef4136" },
-//         { name: "Primary (Dark Navy)", hex: "#02353d" },
-//         { name: "Secondary (Dark Teal)", hex: "#0d6176" },
-//         { name: "Highlight (Light Blue)", hex: "#48acc5" },
-//         { name: "Dark (Black)", hex: "#231f20" },
-//         { name: "Light (Off-white)", hex: "#efefef" }
-//       ],
-//       typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
-//       components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
-//     }
-//   },
+ {
+    id: "dua-empat-tujuh",
+    title: "Unified Dashboard & License Management System",
+    company: "PT Dua Empat Tujuh (Solusi247)",
+    role: "UI/UX Designer Intern",
+    period: "Agu 2025 - Des 2025",
+    description: "Merancang antarmuka pengguna untuk membantu tim bisnis dan operasional dalam memantau data klien, mengelola lisensi produk keamanan siber, serta mengakses informasi keamanan secara lebih efisien melalui pengalaman pengguna yang intuitif..",
+    impact: [
+      "Menyederhanakan proses pengelolaan klien dan lisensi dalam satu platform terpusat.",
+"Meningkatkan efisiensi pemantauan status lisensi, aktivitas pengguna, dan performa layanan melalui visualisasi data yang jelas.",
+"Membantu tim operasional mengakses informasi keamanan siber secara cepat dan terstruktur.",
+"Menghasilkan desain antarmuka yang konsisten, mudah digunakan, dan selaras dengan kebutuhan bisnis serta pengguna."
+    ],
+    tags: ["UI/UX Design","Product Design","Dashboard Design","User Research","Design System","Cyber Security","Data Visualization","Web Application"],
+    platform: "Web Dashboard",
+    tools: ["Figma"],
+    problem: "Pengelolaan data klien, lisensi produk, dan informasi keamanan siber masih tersebar pada berbagai sistem sehingga menyulitkan proses monitoring, pelaporan, serta pengambilan keputusan secara cepat dan akurat.",
+    goal: "Merancang dashboard terintegrasi yang mampu mengonsolidasikan data klien, lisensi, dan keamanan siber ke dalam satu platform yang mudah digunakan, sehingga meningkatkan efisiensi operasional dan pengalaman pengguna.",
+    research: [
+      { title: "Design Thinking", desc:"Berkolaborasi secara rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis, teknis, dan pengguna."},
+      { title: "Stakeholder Discussion", desc: "Diskusi rutin dengan pembimbing lapangan dan tim pengembang untuk menyelaraskan kebutuhan bisnis." },
+      { title: "Workflow Analysis", desc: "Menganalisis alur kerja pengelolaan klien, lisensi, dan informasi keamanan guna menemukan peluang peningkatan efisiensi dan usability." }
+    ],
+    mainFeatures: ["Unified Dashboard", "License Generator", "Threat Intelligence", "CVE Database", "Client Management", "Support Ticket System"],
+    userFlow: ["Login","Dashboard Overview","Manage Client Data","Monitor Security Information","Generate & Manage License","Handle Support Tickets","View Reports & Analytics"],
+    wireframes: ["Dashboard Overview", "Client List", "License Generator Form", "Support Ticket Interface"],
+    highFidelity: [
+      { title: "SOC Unified Dashboard", desc: "Pusat pemantauan aktivitas keamanan siber real-time dengan visualisasi Alert Volume Trend, Severity Breakdown, dan Quick IP Scoring dalam tema gelap yang intuitif.", image: "/images/unified dashboard.png" },
+      { title: "Threat Intelligence & CVE", desc: "Penyajian data indikator ancaman (IOCs) dan database kerentanan (CVE) yang terstruktur.", image: "/images/threadintel.png" },
+      { title: "License Management", desc: "Sistem pengelolaan data klien dan status lisensi (Active, Expired, Trial) secara menyeluruh.", image: "/images/home user.png" },
+      { title: "Support System", desc: "Manajemen tiket dukungan dan kategori untuk penanganan masalah yang sistematis.", image: "/images/support feature.png" }
+    ],
+    designSystem: {
+      colors: [
+        { name: "Accent (Red)", hex: "#ef4136" },
+        { name: "Primary (Dark Navy)", hex: "#02353d" },
+        { name: "Secondary (Dark Teal)", hex: "#0d6176" },
+        { name: "Highlight (Light Blue)", hex: "#48acc5" },
+        { name: "Dark (Black)", hex: "#231f20" },
+        { name: "Light (Off-white)", hex: "#efefef" }
+      ],
+      typography: ["Heading: Outfit (Bold/Black)", "Body: Inter (Medium/Regular)", "Data: JetBrains Mono"],
+      components: ["Responsive Sidebar", "Status Badges", "Data Tables", "Interactive Charts", "Modal Forms"]
+    }
+  },
        {
     id: "jejak-patroli",
     title: "JejakPatroli - Patrol Management & Monitoring System",
@@ -792,7 +792,86 @@ export default function App() {
                   {/* 2. Problem & Goal */}
                       {selectedProject.problem && (
                         <>
-                          {/* Problem & Goal removed as requested */}
+                          {selectedProject.id === "dua-empat-tujuh" && (
+                            <section className="grid gap-6 md:grid-cols-2">
+                              <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-6 md:p-8">
+                                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3">Problem</p>
+                                <p className="text-sm md:text-base leading-relaxed text-slate-700">{selectedProject.problem}</p>
+                              </div>
+                              <div className="rounded-[2rem] border border-slate-200 bg-slate-900 p-6 md:p-8 text-white">
+                                <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-3">Goal</p>
+                                <p className="text-sm md:text-base leading-relaxed text-slate-200">{selectedProject.goal}</p>
+                              </div>
+                            </section>
+                          )}
+
+                          {selectedProject.id === "dua-empat-tujuh" && (
+                            <section className="space-y-8 mt-10">
+                              <h4 className="text-2xl font-black flex items-center gap-2">
+                                <div className="w-1.5 h-6 bg-blue-500 rounded-full" />
+                                Research & Features
+                              </h4>
+                              <div className="grid md:grid-cols-3 gap-6">
+                                {selectedProject.research?.map((item, i) => (
+                                  <div key={i} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+                                    <p className="text-sm font-black text-slate-900 mb-2">{item.title}</p>
+                                    <p className="text-sm leading-relaxed text-slate-600">{item.desc}</p>
+                                  </div>
+                                ))}
+                              </div>
+                              <div className="rounded-[2rem] border border-slate-200 bg-slate-900 p-6 md:p-8">
+                                <p className="text-[10px] font-black uppercase tracking-widest text-accent mb-4">Feature Utama</p>
+                                <div className="flex flex-wrap gap-3">
+                                  {selectedProject.mainFeatures?.map((feature) => (
+                                    <span key={feature} className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100">
+                                      {feature}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                            </section>
+                          )}
+
+                          {selectedProject.id === "dua-empat-tujuh" && selectedProject.userFlow && (
+                            <section className="space-y-6 mt-10">
+                              <h4 className="text-2xl font-black flex items-center gap-2">
+                                <div className="w-1.5 h-6 bg-purple-500 rounded-full" />
+                                User Flow
+                              </h4>
+                              <div className="flex flex-wrap gap-3">
+                                {selectedProject.userFlow.map((step, i) => (
+                                  <div key={i} className="flex items-center gap-3">
+                                    <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 shadow-sm">
+                                      {step}
+                                    </div>
+                                    {i < selectedProject.userFlow!.length - 1 && (
+                                      <ChevronRight size={18} className="text-slate-300" />
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            </section>
+                          )}
+
+                          {selectedProject.id === "dua-empat-tujuh" && selectedProject.highFidelity && (
+                            <section className="space-y-8 mt-10">
+                              <h4 className="text-2xl font-black flex items-center gap-2">
+                                <div className="w-1.5 h-6 bg-pink-500 rounded-full" />
+                                UI Design (High Fidelity)
+                              </h4>
+                              <div className="space-y-8">
+                                {selectedProject.highFidelity.map((hi, i) => (
+                                  <div key={i} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+                                    <h5 className="text-xl font-bold mb-2">{hi.title}</h5>
+                                    <p className="text-sm leading-relaxed text-slate-600 mb-6">{hi.desc}</p>
+                                    <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100">
+                                      <img src={hi.image} alt={hi.title} className="w-full h-auto object-contain" referrerPolicy="no-referrer" />
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </section>
+                          )}
                           {selectedProject.roleDetails && (
                         <section className="mt-10 bg-slate-50 text-slate-900 p-6 md:p-8 rounded-[2rem] border border-slate-200">
                           <h4 className="text-xl md:text-2xl font-black mb-6">My Role</h4>
